@@ -16,9 +16,9 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
 
-    void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context)
     {
-        PlayerMovement.OnMove(context);
+        playerMovement.OnMove(context);
     }
 
 }
