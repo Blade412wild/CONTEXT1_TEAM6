@@ -8,11 +8,14 @@ public class PlayerInputHandler : MonoBehaviour
     public GameObject PlayerPrefab;
     PlayerMovement playerMovement;
 
+    Vector3 startPos = new Vector3(0, 0, 0);    
+
     private void Awake()
     {
         if(PlayerPrefab != null)
         {
-            playerMovement = PlayerPrefab.GetComponent<PlayerMovement>();
+            playerMovement = GameObject.Instantiate(PlayerPrefab, startPos, transform.rotation).GetComponent<PlayerMovement>();
+            transform.parent = playerMovement.transform;
         }
     }
 
