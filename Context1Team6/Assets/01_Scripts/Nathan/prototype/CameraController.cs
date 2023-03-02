@@ -24,8 +24,6 @@ public class CameraController : MonoBehaviour
             Vector3 desiredPosition = player1.transform.position + Offset;
             Vector3 SmoothPostion = Vector3.Lerp(transform.position, desiredPosition, SmoothSpeed * Time.deltaTime);
             transform.position = SmoothPostion;
-            Debug.Log(gizmoPos);
-
         }
 
         else if(GameManager.Instance.PlayerList.Count >= 2)
@@ -34,7 +32,6 @@ public class CameraController : MonoBehaviour
             Vector3 SmoothPostion = Vector3.Lerp(transform.position, desiredPosition, SmoothSpeed * Time.deltaTime);
             transform.position = SmoothPostion;
             gizmoPos = FindCentroit();
-            Debug.Log(gizmoPos);
         }
     }
     IEnumerator CameraStartDelay()
@@ -62,7 +59,6 @@ public class CameraController : MonoBehaviour
         var centerZ = totalZ / GameManager.Instance.PlayerList.Count;
 
         return new Vector3(centerX, centerY, centerZ);
-
     }
 
     private void OnDrawGizmos()
