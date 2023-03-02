@@ -42,10 +42,11 @@ public class PlayerMovement : MonoBehaviour
         //}
 
         //playerVelocity.y += gravityValue * Time.deltaTime;
-        //controller.Move(playerVelocity * Time.deltaTime);
+        //.Move(playerVelocity * Time.deltaTime);
 
         playerVelocity.y = gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
 
 
    
@@ -56,4 +57,6 @@ public class PlayerMovement : MonoBehaviour
             move = new Vector3(movement.x, 0, movement.y);
 
         }
+
+    
 }
