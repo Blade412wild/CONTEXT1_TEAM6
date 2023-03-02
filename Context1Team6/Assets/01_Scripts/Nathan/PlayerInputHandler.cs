@@ -16,6 +16,7 @@ public class PlayerInputHandler : MonoBehaviour
         {
             playerMovement = GameObject.Instantiate(PlayerPrefab, GameManager.Instance.SpawnPoints[0].transform.position, transform.rotation).GetComponent<PlayerMovement>();
             transform.parent = playerMovement.transform;
+            transform.position = playerMovement.transform.position;
         }
     }
 
