@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Developer : MonoBehaviour
+public class Developer : PlayerMovement
 {
     //Material DeveloperMaterial = GameAssets.Instance.Developer;
     Renderer PlayerRenderer;
@@ -14,8 +14,7 @@ public class Developer : MonoBehaviour
     {
         //PlayerRenderer= gameObject.GetComponentInChildren<Renderer>();
         // PlayerRenderer.material= DeveloperMaterial;
-        SetCharacter();
-    }
+        SetCharacter();    }
 
     private void SetCharacter()
     {

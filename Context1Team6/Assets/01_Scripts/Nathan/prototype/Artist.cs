@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-public class Artist : MonoBehaviour
+public class Artist : PlayerMovement
 {
     private void Start()
     {

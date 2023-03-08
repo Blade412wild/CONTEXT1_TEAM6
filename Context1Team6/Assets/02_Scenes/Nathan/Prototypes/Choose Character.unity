@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-66746
+  m_Name: pb_Mesh27126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -772,51 +772,19 @@ MonoBehaviour:
     m_Name: Join
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 673805e0-8a42-43f2-9248-4476f01fd33c
+    m_Id: f398486a-54f6-4a78-aa58-ebb1825545f5
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: ca8fbdbe-9720-4a7d-8bd4-1e3733cd9b6a
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Join
-      m_Flags: 0
-    - m_Name: 
-      m_Id: dca17fb5-d693-43a3-b93e-ee9b38c98d5c
-      m_Path: <DualShockGamepad>/touchpadButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Join
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
   leaveAction:
     m_Name: Leave
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 34b3a77c-f0fd-4cd0-816f-768b8a1ee5b8
+    m_Id: 7dce56fe-4e2b-48fd-b388-1045f9a974d5
     m_Processors: 
-    m_Interactions: Hold
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 66f8e001-1080-43ab-852a-0c5f114fbdc6
-      m_Path: <Keyboard>/escape
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Leave
-      m_Flags: 0
-    - m_Name: 
-      m_Id: c68be711-49ee-43ac-8c6f-800a457e0c4a
-      m_Path: <DualShockGamepad>/touchpadButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Leave
-      m_Flags: 0
+    m_Interactions: 
+    m_SingletonActionBindings: []
     m_Flags: 0
 --- !u!4 &616439487
 Transform:
@@ -873,7 +841,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 164282c80f340c54884b5f363aa8d447, type: 2}
+  - {fileID: 2100000, guid: de2212995794caa43bb15f12b3cb6cc0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -983,7 +951,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: de2212995794caa43bb15f12b3cb6cc0, type: 2}
+  - {fileID: 2100000, guid: 164282c80f340c54884b5f363aa8d447, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
