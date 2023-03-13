@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9f2900-ebf7-4cc4-ae0a-eb102cfcc58b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Bryan/Bryan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Scenes/Bryan/Bryan.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_material/Bryan/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_material/Bryan/New Material.mat.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/Bryan/RayCastUitleg.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/9d/80eaf265/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,7 +77,8 @@
       <workItem from="1678368299578" duration="2059000" />
       <workItem from="1678547450889" duration="2065000" />
       <workItem from="1678549837989" duration="90000" />
-      <workItem from="1678704387386" duration="1483000" />
+      <workItem from="1678704387386" duration="2922000" />
+      <workItem from="1678710924784" duration="2344000" />
     </task>
     <servers />
   </component>
