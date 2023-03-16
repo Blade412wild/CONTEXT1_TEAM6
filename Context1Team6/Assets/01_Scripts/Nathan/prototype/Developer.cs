@@ -2,20 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Developer : MonoBehaviour
-{
-    //Material DeveloperMaterial = GameAssets.Instance.Developer;
-    Renderer PlayerRenderer;
-    GameObject CurrentPlayer;
-    GameObject DeveloperPrefab;
-
-    // Start is called before the first frame update
+public class Developer : PlayerMovement
+{  
     void Start()
     {
-        //PlayerRenderer= gameObject.GetComponentInChildren<Renderer>();
-        // PlayerRenderer.material= DeveloperMaterial;
-        SetCharacter();
-    }
+        SetCharacter();    }
 
     private void SetCharacter()
     {
