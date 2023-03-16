@@ -10,7 +10,10 @@ public class SpawnObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation);
-        Destroy(DestroyPrefab);
+        if (gameObject.CompareTag("Artist"))
+        {
+            Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation);
+            Destroy(DestroyPrefab);
+        }
     }
 }
