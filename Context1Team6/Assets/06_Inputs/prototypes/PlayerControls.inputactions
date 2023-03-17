@@ -16,8 +16,8 @@
                 },
                 {
                     "name": "Jump",
-                    "type": "Button",
-                    "id": "84c01e85-5045-47db-8259-5f4dda7f6f6a",
+                    "type": "PassThrough",
+                    "id": "24635b37-b5ad-47a9-9d49-fd21d4a788a5",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -93,7 +93,18 @@
                 },
                 {
                     "name": "",
-                    "id": "ccf4b394-83d4-4c3b-89db-6aa2aa76af6a",
+                    "id": "abd0cdb7-8320-4876-a2f7-30f308306227",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "GamePad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a41445b0-52c1-4ba0-84f1-566694bef1ae",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -106,12 +117,12 @@
         },
         {
             "name": "Designer",
-            "id": "97ec5958-e1d4-4a1f-b70c-d5c2909cf9f9",
+            "id": "f38c239a-150d-473b-a0bc-51392e1f4708",
             "actions": [
                 {
                     "name": "GravityCycle",
                     "type": "Button",
-                    "id": "f378c132-c71e-45e4-9d83-a1389e9c1275",
+                    "id": "df828f88-ef44-490c-8046-4852ca8872db",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -120,26 +131,26 @@
                 {
                     "name": "MovementSpeedCycle",
                     "type": "Button",
-                    "id": "40ee4999-e573-48c7-b741-baecf025beab",
+                    "id": "ea3bfcce-f266-4ec4-981f-b39f47427885",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "JumpHeightCycle",
                     "type": "Button",
-                    "id": "87cbce17-9ae0-4833-8a5a-35a867fb0cd5",
+                    "id": "54cb2c83-c9d3-4cc0-91e6-c51d1ea3d722",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "657f55f0-ed52-440e-a382-be78ad9b7b0c",
+                    "id": "978fc59f-22c9-4035-815b-289c2ba78e27",
                     "path": "<Keyboard>/g",
                     "interactions": "",
                     "processors": "",
@@ -150,7 +161,7 @@
                 },
                 {
                     "name": "",
-                    "id": "77e9ecd9-7d96-4630-8f0b-6827141e6caf",
+                    "id": "29c7ab81-f5f2-4c59-a814-7eebd7a61ec9",
                     "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
@@ -161,7 +172,7 @@
                 },
                 {
                     "name": "",
-                    "id": "645a8f38-79eb-4df4-affe-e8248b5d8c8f",
+                    "id": "19aa33c3-bd0d-4558-925d-dea8494af93c",
                     "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
