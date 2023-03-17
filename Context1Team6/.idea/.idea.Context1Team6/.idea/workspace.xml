@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9f2900-ebf7-4cc4-ae0a-eb102cfcc58b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/DesignerCube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/DesignerCube.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/PlayerInputHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Bryan/Bryan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Scenes/Bryan/Bryan.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Bryan/Designer Skill.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Bryan/Designer Skill.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_material/Bryan/Obstacle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_material/Bryan/Obstacle.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.inputactions.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/PlayerControls.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +86,7 @@
       <workItem from="1678785012293" duration="2207000" />
       <workItem from="1678875456473" duration="2988000" />
       <workItem from="1678908279439" duration="1718000" />
+      <workItem from="1679052583416" duration="1412000" />
     </task>
     <servers />
   </component>
