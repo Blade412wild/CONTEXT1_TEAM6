@@ -18,7 +18,7 @@ namespace _01_Scripts.Bryan
             input.Designer.GravityCycle.performed += ctx => { CycleBetweenGravityValues(); };
             input.Designer.JumpHeightCycle.performed += ctx => { CycleBetweenJumpHeightValues(); };
             input.Designer.MovementSpeedCycle.performed += ctx => { CycleBetweenMovementSpeedValues(); };
-            input.Enable();
+            input.Designer.Enable();
         }
 
         // Update is called once per frame

@@ -6,13 +6,16 @@ public class Player : MonoBehaviour
 {
     private PlayerControls input;
 
+
     // Start is called before the first frame update
     void Awake()
     {
         input = new PlayerControls();
-        input.Player.MiniMenu.performed += ctx => { OpenMiniMenu(); };
-        input.MiniMenu.Playing.performed += ctx => { PlayTime(); };
-        //input.Player.Enable();
+
+        input.Player.MiniMenu.performed += ctx => { MiniMenuActive(); };
+        input.MiniMenu.Playing.performed += ctx => { Playing(); };
+        input.Player.Enable();
+
     }
 
     // Update is called once per frame
@@ -21,26 +24,18 @@ public class Player : MonoBehaviour
         
     }
 
-    public void OpenMiniMenu()
+    public void MiniMenuActive()
     {
         input.Player.Disable();
         input.MiniMenu.Enable();
 
-        Debug.Log("openMenu amd inputPlayer disabled");
+        Debug.Log("open Menu");
     }
 
-    public void PlayTime()
+    public void Playing()
     {
         input.Player.Enable();
         input.MiniMenu.Disable();
-
-        Debug.Log("Playing amd inputPlayer enabled");
-
+        Debug.Log("Back to Playing");
     }
-
-
-
-
-
-
 }

@@ -228,7 +228,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35164
+  m_Name: pb_Mesh61980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -586,8 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPoints: []
-  PlayerList:
-  - {fileID: 0}
+  PlayerList: []
   joinAction:
     m_Name: Join
     m_Type: 0
