@@ -1005,11 +1005,11 @@ MonoBehaviour:
   vraag3: {fileID: 1326852146}
   vraag4: {fileID: 1915577522}
   vraag5: {fileID: 1281359526}
-  antwoord1Index: 1
-  antwoord2Index: 1
-  antwoord3Index: 1
-  antwoord4Index: 1
-  antwoord5Index: 1
+  antwoord1Index: 0
+  antwoord2Index: 2
+  antwoord3Index: 0
+  antwoord4Index: 0
+  antwoord5Index: 2
 --- !u!1 &437144232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: 0.1f;
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1665,7 +1665,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 79e3c83ca0493a24395d16be92aa5c73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb4af941814058846958196dcea8f130, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2714,8 +2714,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379.65, y: 163}
-  m_SizeDelta: {x: 200, y: 35}
+  m_AnchoredPosition: {x: -245.39554, y: 283.5}
+  m_SizeDelta: {x: 65.4091, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &908084472
 MonoBehaviour:
@@ -2767,11 +2767,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: private Transform playerPos
+    - m_Text: true;
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: false;
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 0.5f;
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2853,7 +2853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: doorMayOpen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2947,7 +2947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.4999847, y: -0.5}
+  m_AnchoredPosition: {x: -7.5, y: -0.5}
   m_SizeDelta: {x: -35, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963837040
@@ -3008,7 +3008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: OpenTheDoor();
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3418,7 +3418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: true
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4537,11 +4537,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: 
+    - m_Text: doorMayOpen
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: transform.position.y
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: howManyUnitsShouldTheDoorMove
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4567,8 +4567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.1, y: 126}
-  m_SizeDelta: {x: 200, y: 35}
+  m_AnchoredPosition: {x: 195.856, y: -238.4}
+  m_SizeDelta: {x: 284.3122, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281359528
 MonoBehaviour:
@@ -4774,8 +4774,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.1, y: 163}
-  m_SizeDelta: {x: 200, y: 35}
+  m_AnchoredPosition: {x: -433.5337, y: -103.3}
+  m_SizeDelta: {x: 142.9326, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326852146
 MonoBehaviour:
@@ -4827,11 +4827,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: OpenTheDoor();
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: OpenDoor();
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: '"Open the door on the Y-axis";'
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6446,9 +6446,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379.65, y: 86}
-  m_SizeDelta: {x: 200, y: 35}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -211.16, y: -207.4}
+  m_SizeDelta: {x: 143.73, y: 35}
+  m_Pivot: {x: 0.73318446, y: 0.50000036}
 --- !u!114 &1915577522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6499,11 +6499,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: true
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: false
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: null
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7252,7 +7252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: private Transform playerPos
+  m_text: true;
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7444,8 +7444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379.65, y: 126}
-  m_SizeDelta: {x: 200, y: 35}
+  m_AnchoredPosition: {x: -60.173096, y: 183.3}
+  m_SizeDelta: {x: 65.6538, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122067528
 MonoBehaviour:
@@ -7497,11 +7497,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: 0.1f;
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: 1f;
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 7f;
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9f2900-ebf7-4cc4-ae0a-eb102cfcc58b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Dev skills/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Dev skills/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Bryan/LoadDeveloperPuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Bryan/LoadDeveloperPuzzle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Nathan/Prototypes/MarioFighter Selection Screen.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Nathan/Prototypes/TestDevTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Scenes/Nathan/Prototypes/TestDevTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/prototypes/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Inputs/prototypes/PlayerControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

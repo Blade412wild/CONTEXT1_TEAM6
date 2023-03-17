@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,16 +19,16 @@ public class ChooseCharacterController : MonoBehaviour
         desingerCube.Change = false;
         artistCube.Change = false;
     }
+
     void Update()
     {
-        if(developerCube.IsOcuppied == true && desingerCube.IsOcuppied == true && artistCube.IsOcuppied == true)
+        if (developerCube.IsOcuppied == true && desingerCube.IsOcuppied == true && artistCube.IsOcuppied == true)
         {
             Debug.Log("change Characters");
 
             developerCube.Change = true;
             desingerCube.Change = true;
             artistCube.Change = true;
-
         }
         else
         {
@@ -38,5 +39,4 @@ public class ChooseCharacterController : MonoBehaviour
             artistCube.Change = false;
         }
     }
-
 }
