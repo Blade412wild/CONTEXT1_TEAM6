@@ -61,13 +61,11 @@ public class PlayerMovement : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
             IsGrounded = true;
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
-            Debug.Log("Did not Hit");
             IsGrounded = false;
         }
     }

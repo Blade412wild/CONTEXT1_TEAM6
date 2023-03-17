@@ -45,15 +45,17 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //PlayerInputManager.instance.JoinPlayer(0, -1, null);
+       //PlayerInputManager.instance.JoinPlayer(0, -1, null);
     }
 
     void OnPlayerJoined(PlayerInput playerInput)
     {
+        Debug.Log("onPlayerJoined");
         PlayerList.Add(playerInput);
 
         if(PlayerJoinedGame != null)
         {
+            Debug.Log("PlayerJoinedGame != null");
             PlayerJoinedGame(playerInput);
         }
     }

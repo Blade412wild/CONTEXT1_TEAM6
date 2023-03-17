@@ -91,9 +91,77 @@ MonoBehaviour:
     m_ActionId: 24635b37-b5ad-47a9-9d49-fd21d4a788a5
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1543f6f7-a3f9-4e42-bf56-c20f3ad4e42e
+    m_ActionName: Player/MiniMenu[/DualSenseGamepadHID/start]
+  - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 6c53e2e6-c0d3-4eb1-baa4-4401bdbfc984
-    m_ActionName: Player/Hit
+    m_ActionId: df828f88-ef44-490c-8046-4852ca8872db
+    m_ActionName: Designer/GravityCycle[/Keyboard/g]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ea3bfcce-f266-4ec4-981f-b39f47427885
+    m_ActionName: Designer/MovementSpeedCycle[/Keyboard/m]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 54cb2c83-c9d3-4cc0-91e6-c51d1ea3d722
+    m_ActionName: Designer/JumpHeightCycle[/Keyboard/j]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: eb05e1aa-9698-4d24-8d36-f904d8c6cd01
+    m_ActionName: UI/Navigate[/DualSenseGamepadHID/leftStick/up,/DualSenseGamepadHID/rightStick/up,/DualSenseGamepadHID/leftStick/down,/DualSenseGamepadHID/rightStick/down,/DualSenseGamepadHID/leftStick/left,/DualSenseGamepadHID/rightStick/left,/DualSenseGamepadHID/leftStick/right,/DualSenseGamepadHID/rightStick/right,/DualSenseGamepadHID/dpad,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d3581a3b-6b2a-451d-a4d8-be0759b35dda
+    m_ActionName: UI/Submit[/Keyboard/enter,/DualSenseGamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0e61b8d7-051d-436c-abd7-12f6f88dd50a
+    m_ActionName: UI/Cancel[/Keyboard/escape,/DualSenseGamepadHID/buttonEast]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 739202f2-d7af-440d-8556-22b7ceb53978
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 74e983f0-6d34-4d1e-86de-4ac612ecbe00
+    m_ActionName: UI/Click[/Mouse/leftButton,/DualSenseGamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 889f3a10-ae86-43b3-9867-7ab50a7b3cde
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ece1c45c-4f41-4427-a8aa-0d5a11e3d3cb
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 28214bef-1f4b-4715-8a89-58469a4b7688
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3814eb63-e2e7-4272-b5e6-478692cbf6f3
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4b12c4fc-486d-408c-8e9c-38d10390e9b4
+    m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 55c1b3d1-ac14-4e37-b5e2-1f388f1547e3
+    m_ActionName: MiniMenu/Playing[/DualSenseGamepadHID/start]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

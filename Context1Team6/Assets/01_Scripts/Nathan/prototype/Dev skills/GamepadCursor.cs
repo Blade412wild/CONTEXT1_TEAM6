@@ -81,7 +81,6 @@ public class GamepadCursor : MonoBehaviour
             mouseState.WithButton(MouseButton.Left, Gamepad.current.aButton.IsPressed());
             InputState.Change(virtualMouse, mouseState);
             previousMouseState = abuttonIsPressed;
-
         }
         AnchorCursor(newPosition);
     }
