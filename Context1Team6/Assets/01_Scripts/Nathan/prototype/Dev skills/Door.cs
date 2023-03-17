@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Puzzel1Input.Passed == true && isOccupied ==true)
+        if (Puzzel1Input.Passed == true && isOccupied == true)
         {
             MoveGameObject();
         }
