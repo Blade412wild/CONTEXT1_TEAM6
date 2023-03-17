@@ -114,6 +114,74 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Designer",
+            "id": "90769658-531e-4915-b867-91aa70680c7b",
+            "actions": [
+                {
+                    "name": "GravityCycle",
+                    "type": "Button",
+                    "id": "017f211f-30f1-4aef-b1d4-8ac9fbbf2592",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MovementSpeedCycle",
+                    "type": "Button",
+                    "id": "861a8c3c-f236-437d-a876-dfbebd47001a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JumpHeightCycle",
+                    "type": "Button",
+                    "id": "48b381f6-48ec-46a2-9a8b-fbc267c5229d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b4da574c-4d99-40b6-bf53-f4ec01be5730",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "GamePad",
+                    "action": "GravityCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "323e9012-f142-45dc-af9b-e3cb1a92178f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "GamePad",
+                    "action": "MovementSpeedCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa1ffa10-9713-439a-b7ec-51b140ea009c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "GamePad",
+                    "action": "JumpHeightCycle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
