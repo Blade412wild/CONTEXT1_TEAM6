@@ -18,7 +18,7 @@ public class Designer : PlayerMovement
         this.transform.GetChild(2).gameObject.SetActive(false);
         this.transform.GetChild(3).gameObject.SetActive(false);
 
-        // Artist aanzetten
+        //Designer aanzetten
         this.transform.GetChild(2).gameObject.SetActive(true);
 
     }

@@ -12,12 +12,15 @@ public class PlayerMovement : MonoBehaviour
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
+    public float playerSpeed = 2.0f;
+    public float jumpHeight = 1.0f;
+    public float gravityValue = -9.81f;
+
     private Vector3 move;
 
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
-        
     }
 
     void Update()
@@ -34,27 +37,27 @@ public class PlayerMovement : MonoBehaviour
         {
             gameObject.transform.forward = move;
         }
-
-        // Changes the height position of the player..
-        //if (Input.GetButtonDown("Jump") && groundedPlayer)
-        //{
-        //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        //}
+        
+        //Changes the height position of the player..
+        /*if (Input.GetButtonDown("Jump") && groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }*/
+        
+        //playerVelocity.y = playerVelocity.y + gravityValue * Time.deltaTime;
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
-
-
-
-
-   
     }
-        public void OnMove(InputAction.CallbackContext context)
-        {
-            Vector2 movement = context.ReadValue<Vector2>();
-            move = new Vector3(movement.x, 0, movement.y);
 
-        }
+    public void Jumping()
+    {
+        playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+    }
 
-    
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        Vector2 movement = context.ReadValue<Vector2>();
+        move = new Vector3(movement.x, 0, movement.y);
+    }
 }
