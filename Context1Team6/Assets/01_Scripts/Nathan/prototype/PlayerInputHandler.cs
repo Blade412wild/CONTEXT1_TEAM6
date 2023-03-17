@@ -25,4 +25,11 @@ public class PlayerInputHandler : MonoBehaviour
         playerMovement.OnMove(context);
     }
 
+    public void Jump(InputAction.CallbackContext context)
+    {
+
+        playerMovement.Jump(context);
+
+    }
+
 }

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float playerSpeed = 2.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
+    private bool IsGrounded;
 
     private Vector3 move;
 
@@ -22,11 +23,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        //groundedPlayer = controller.isGrounded;
-        //if (groundedPlayer && playerVelocity.y < 0)
-        //{
-        //    playerVelocity.y = 0f;
-        //}
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
+        {
+            playerVelocity.y = 0f;
+        }
 
         controller.Move(move * Time.deltaTime * playerSpeed);
 
@@ -35,26 +36,40 @@ public class PlayerMovement : MonoBehaviour
             gameObject.transform.forward = move;
         }
 
-        // Changes the height position of the player..
-        //if (Input.GetButtonDown("Jump") && groundedPlayer)
-        //{
-        //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        //}
-
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
 
-
-
-
-   
     }
-        public void OnMove(InputAction.CallbackContext context)
-        {
+    public void OnMove(InputAction.CallbackContext context)
+    {
             Vector2 movement = context.ReadValue<Vector2>();
             move = new Vector3(movement.x, 0, movement.y);
+    }
 
+    public void Jump(InputAction.CallbackContext context)
+    {
+        Grounded();
+        if (context.performed && IsGrounded == true)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
+    }
 
-    
+    private void Grounded()
+    {
+        // schiet een ray om te checken if Grounded
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 0.5f))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
+            IsGrounded = true;
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
+            Debug.Log("Did not Hit");
+            IsGrounded = false;
+        }
+    }
 }
