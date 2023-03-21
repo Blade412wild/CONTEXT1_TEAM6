@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class puzzel1Input : MonoBehaviour
 {
     public bool Passed;
+    [SerializeField] private GameObject _correspondingDoor;
 
     [Header("vragen")]
     [SerializeField]
@@ -49,6 +50,8 @@ public class puzzel1Input : MonoBehaviour
         if(vraag1.value == antwoord1Index && vraag2.value == antwoord2Index && vraag3.value == antwoord3Index && vraag4.value == antwoord4Index && vraag5.value == antwoord5Index)
         {
             Debug.Log("passed");
+            _correspondingDoor.transform.position = new Vector3(transform.position.x, 5f, transform.position.z);
+            
             Passed = true;
             vraag1.value = antwoord1Index + 1;
         }
