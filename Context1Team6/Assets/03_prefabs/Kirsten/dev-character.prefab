@@ -124,6 +124,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471203885219278000}
     m_Modifications:
+    - target: {fileID: -2809907763482747180, guid: db3b327779a0c7948ba1b520b4f6bbb3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2357848814853132476, guid: db3b327779a0c7948ba1b520b4f6bbb3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5142994991506384948, guid: db3b327779a0c7948ba1b520b4f6bbb3, type: 3}
       propertyPath: m_Name
       value: Des_Idle

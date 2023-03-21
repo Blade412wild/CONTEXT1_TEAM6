@@ -7,18 +7,18 @@ namespace _01_Scripts.Bryan
     {
         [SerializeField] private PlayerMovement _playerMovement;
 
-        private PlayerControls input;
+        private PlayerControls _input;
 
         // Start is called before the first frame update
         void Start()
         {
             _playerMovement = GetComponent<PlayerMovement>();
             
-            input = new PlayerControls();
-            input.Designer.GravityCycle.performed += ctx => { CycleBetweenGravityValues(); };
-            input.Designer.JumpHeightCycle.performed += ctx => { CycleBetweenJumpHeightValues(); };
-            input.Designer.MovementSpeedCycle.performed += ctx => { CycleBetweenMovementSpeedValues(); };
-            input.Designer.Enable();
+            _input = new PlayerControls();
+            _input.Designer.GravityCycle.performed += ctx => { CycleBetweenGravityValues(); };
+            _input.Designer.JumpHeightCycle.performed += ctx => { CycleBetweenJumpHeightValues(); };
+            _input.Designer.MovementSpeedCycle.performed += ctx => { CycleBetweenMovementSpeedValues(); };
+            _input.Designer.Enable();
         }
 
         // Update is called once per frame
