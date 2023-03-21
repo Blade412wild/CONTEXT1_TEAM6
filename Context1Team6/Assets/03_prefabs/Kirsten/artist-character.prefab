@@ -4946,6 +4946,7 @@ GameObject:
   - component: {fileID: 4271545789250806610}
   - component: {fileID: 1951239678759099133}
   - component: {fileID: -7271795655340489121}
+  - component: {fileID: 7028766965958998307}
   m_Layer: 0
   m_Name: artist-character
   m_TagString: Artist
@@ -5065,6 +5066,21 @@ MonoBehaviour:
   _shootRayFromHere: {fileID: 5271253785073280106}
   _obstaclePrefab: {fileID: 571406135934703857, guid: 6f03fd96a9e42764982af317f9764bfc, type: 3}
   _truePathPrefab: {fileID: 8952679730816721815, guid: 98f74f242a87c0747af71302cbed882e, type: 3}
+--- !u!114 &7028766965958998307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4502733129272681379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e159949ebff9214fa10dced4e07205e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootRayFromHere: {fileID: 5271253785073280106}
+  _obstaclePrefab: {fileID: 3909807943709633162, guid: db9ba21f39db82a48a571797b68b3d6b, type: 3}
+  _truePathPrefab: {fileID: 0}
 --- !u!1 &4528676091245540094
 GameObject:
   m_ObjectHideFlags: 0
