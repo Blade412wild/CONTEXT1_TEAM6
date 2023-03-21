@@ -15,12 +15,12 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefab != null)
-        {
-            playerMovement = GameObject.Instantiate(PlayerPrefab, GameManager.Instance.SpawnPoints[0].transform.position, transform.rotation).GetComponent<PlayerMovement>();
-            transform.parent = playerMovement.transform;
-            transform.position = playerMovement.transform.position;
-        }
+        var GameManager = GameObject.FindAnyObjectByType<GameManager>();
+        PlayerInputManager PlayerManager = GameManager.GetComponent<PlayerInputManager>();
+
+        int PlayerIndex = PlayerManager.playerCount - 1;
+        SpawnPlayers(PlayerIndex);
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -33,6 +33,16 @@ public class PlayerInputHandler : MonoBehaviour
 
         playerMovement.Jump(context);
 
+    }
+
+    private void SpawnPlayers(int index)
+    {
+        if (PlayerPrefab != null)
+        {
+            playerMovement = GameObject.Instantiate(PlayerPrefab, GameManager.Instance.SpawnPoints[index].transform.position, transform.rotation).GetComponent<PlayerMovement>();
+            transform.parent = playerMovement.transform;
+            transform.position = playerMovement.transform.position;
+        }
     }
 
 }

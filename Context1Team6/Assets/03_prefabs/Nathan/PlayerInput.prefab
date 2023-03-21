@@ -151,7 +151,7 @@ MonoBehaviour:
     m_ActionId: b4cb1d35-add9-4272-923b-f2d194216ed0
     m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: GamePad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -167,4 +167,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28dc571828e1b144aa98671da2b58641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 2554278271128578568, guid: 033669632a7ebcc498402c6a0781757d, type: 3}
+  PlayerPrefab: {fileID: 1977597651876128806, guid: 86eb9cffa65711f49a1c4c0aaa06ede5, type: 3}

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public event System.Action<PlayerInput> PlayerJoinedGame;
     public event System.Action<PlayerInput> PlayerLeftGame;
 
+    public int PlayerIndex;
 
     //instances 
     public static GameManager Instance = null;
@@ -33,8 +34,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        SpawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
-
         joinAction.Enable();
         joinAction.performed += context => JoinAction(context);
 
@@ -45,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-       //PlayerInputManager.instance.JoinPlayer(0, -1, null);
+        SpawnPlayers();
     }
 
     void OnPlayerJoined(PlayerInput playerInput)
@@ -74,6 +73,16 @@ public class GameManager : MonoBehaviour
         PlayerInputManager.instance.JoinPlayerFromActionIfNotAlreadyJoined(context);
         Debug.Log("left the game");
 
+    }
+
+    private void SpawnPlayers()
+    {
+        for(int i = 0; i < SpawnPoints.Length; i++)
+        {
+            Debug.Log(PlayerIndex);
+            PlayerInputManager.instance.JoinPlayer(PlayerIndex, -1, null);
+            PlayerIndex++;
+        }
     }
 
 
