@@ -3941,14 +3941,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3796296759394062752}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.6884466, z: -0, w: 0.725287}
   m_LocalPosition: {x: 1.23, y: -1.2, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1263630594326046425}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 87.015, z: 0}
 --- !u!1 &3855645511522124952
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,8 +5064,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootRayFromHere: {fileID: 5271253785073280106}
-  _obstaclePrefab: {fileID: 571406135934703857, guid: 6f03fd96a9e42764982af317f9764bfc, type: 3}
-  _truePathPrefab: {fileID: 8952679730816721815, guid: 98f74f242a87c0747af71302cbed882e, type: 3}
+  _obstaclePrefab: {fileID: 1662483746733144491, guid: de3a72cc97e89d7438302fe80eb31251, type: 3}
+  _truePathPrefab: {fileID: 8608351677535646391, guid: 3318f54809c11dd4585bc647ad2ee24d, type: 3}
 --- !u!114 &7028766965958998307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6041,8 +6041,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5184990725579436594}
-  m_LocalRotation: {x: -0, y: 0.74777454, z: -0, w: 0.6639528}
-  m_LocalPosition: {x: -0.32, y: -1.29, z: -2.95}
+  m_LocalRotation: {x: -0, y: 0.7186894, z: -0, w: 0.69533134}
+  m_LocalPosition: {x: -0.09, y: -1.29, z: -3.17}
   m_LocalScale: {x: 68.551735, y: 68.55175, z: 68.551735}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6131,7 +6131,7 @@ Transform:
   - {fileID: 4272671501880048780}
   m_Father: {fileID: 1263630594326046425}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 91.893, z: 0}
 --- !u!95 &1900296872247358194
 Animator:
   serializedVersion: 5
