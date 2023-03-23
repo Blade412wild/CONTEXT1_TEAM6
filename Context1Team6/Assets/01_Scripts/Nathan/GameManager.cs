@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using UnityEditor.PackageManager; 
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
-        else if(Instance != null)
+        else if (Instance != null)
         {
             Destroy(gameObject);
         }
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SpawnPlayers();
+        //SpawnPlayers();
     }
 
     void OnPlayerJoined(PlayerInput playerInput)
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("onPlayerJoined");
         PlayerList.Add(playerInput);
 
-        if(PlayerJoinedGame != null)
+        if (PlayerJoinedGame != null)
         {
             Debug.Log("PlayerJoinedGame != null");
             PlayerJoinedGame(playerInput);
@@ -77,9 +77,9 @@ public class GameManager : MonoBehaviour
 
     private void SpawnPlayers()
     {
-        for(int i = 0; i < SpawnPoints.Length; i++)
+        for (int i = 0; i < SpawnPoints.Length; i++)
         {
-            Debug.Log(PlayerIndex);
+            Debug.Log(PlayerIndex + " PlayerIndex manager");
             PlayerInputManager.instance.JoinPlayer(PlayerIndex, -1, null);
             PlayerIndex++;
         }

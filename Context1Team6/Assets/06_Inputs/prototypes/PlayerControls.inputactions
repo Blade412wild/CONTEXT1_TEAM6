@@ -820,7 +820,7 @@
                 },
                 {
                     "devicePath": "<VirtualMouse>",
-                    "isOptional": false,
+                    "isOptional": true,
                     "isOR": false
                 }
             ]
