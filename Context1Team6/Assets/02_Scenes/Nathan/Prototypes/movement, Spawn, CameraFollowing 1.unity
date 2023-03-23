@@ -172,7 +172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &492142224
 AudioListener:
   m_ObjectHideFlags: 0
@@ -671,6 +671,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: dca17fb5-d693-43a3-b93e-ee9b38c98d5c
       m_Path: <DualShockGamepad>/touchpadButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Join
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 42a84c8e-a611-4c12-b9de-5f3326efe7fe
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 

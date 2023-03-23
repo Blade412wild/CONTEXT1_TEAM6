@@ -25,7 +25,7 @@ public class GamepadCursor : MonoBehaviour
     private Camera mainCamera;
     private void OnEnable()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
 
         mainCamera = Camera.main;
 
@@ -74,6 +74,7 @@ public class GamepadCursor : MonoBehaviour
         InputState.Change(virtualMouse.delta, deltaValue);
 
         bool abuttonIsPressed = Gamepad.current.aButton.IsPressed();
+
 
         if(previousMouseState != abuttonIsPressed)
         {
