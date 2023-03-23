@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9f2900-ebf7-4cc4-ae0a-eb102cfcc58b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Context1Team6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Bryan/DesignerSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Bryan/DesignerSkill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Dev skills/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Dev skills/Door.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Dev skills/puzzel1Input.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Nathan/prototype/Dev skills/puzzel1Input.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Scenes/Eind scene/Three Makes One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Scenes/Eind scene/Three Makes One.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03_prefabs/Kirsten/blanco-character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03_prefabs/Kirsten/blanco-character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03_prefabs/Kirsten/dev-character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03_prefabs/Kirsten/dev-character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/prototypes/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Inputs/prototypes/PlayerControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Inputs/prototypes/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Inputs/prototypes/PlayerControls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +92,11 @@
       <workItem from="1678875456473" duration="2988000" />
       <workItem from="1678908279439" duration="1718000" />
       <workItem from="1679052583416" duration="2465000" />
-      <workItem from="1679404367856" duration="1735000" />
+      <workItem from="1679404367856" duration="1999000" />
+      <workItem from="1679432323871" duration="2064000" />
+      <workItem from="1679483508314" duration="947000" />
+      <workItem from="1679485511381" duration="634000" />
+      <workItem from="1679519062944" duration="597000" />
     </task>
     <servers />
   </component>
