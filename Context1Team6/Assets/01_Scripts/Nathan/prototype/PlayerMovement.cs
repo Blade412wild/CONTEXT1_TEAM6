@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public float gravityValue = -9.81f;
     public bool IsGrounded;
 
+    private Animator anim;
+
     private Vector3 move;
 
     private void Awake()
@@ -33,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
         if (move != Vector3.zero)
         {
             gameObject.transform.forward = move;
+            anim.SetInteger("AnimationPar", 1);
+
+        } else
+        {
+            anim.SetInteger("AnimationPar", 0);
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
@@ -43,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     {
             Vector2 movement = context.ReadValue<Vector2>();
             move = new Vector3(movement.x, 0, movement.y);
+         
     }
 
     public void Jump(InputAction.CallbackContext context)
