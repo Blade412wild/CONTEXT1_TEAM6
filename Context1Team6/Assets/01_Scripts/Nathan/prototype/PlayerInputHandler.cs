@@ -9,6 +9,8 @@ public class PlayerInputHandler : MonoBehaviour
     public GameObject PlayerPrefab;
     PlayerMovement playerMovement;
 
+
+
     private DesignerSkill _designerSkill;
 
     Vector3 startPos = new Vector3(0, 0, 0);
@@ -26,6 +28,7 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         playerMovement.OnMove(context);
+        
     }
 
     public void Jump(InputAction.CallbackContext context)

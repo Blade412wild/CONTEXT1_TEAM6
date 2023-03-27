@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace _01_Scripts.Nathan.prototype.Dev_skills
 {
@@ -28,8 +30,14 @@ namespace _01_Scripts.Nathan.prototype.Dev_skills
 
         [SerializeField] private int antwoord5Index;
 
+        private PlayerInput playerInput;
+
+        public LoadDeveloperPuzzle loadDeveloperPuzzle;
+
         private void Start()
         {
+
+            playerInput = loadDeveloperPuzzle.playerInput;
             Passed = false;
         }
 
@@ -41,6 +49,13 @@ namespace _01_Scripts.Nathan.prototype.Dev_skills
                 Debug.Log("passed");
     
                 Passed = true;
+
+                playerInput.SwitchCurrentActionMap("Player");
+                
+                Debug.Log(playerInput.currentActionMap);
+
+                loadDeveloperPuzzle.gameObject.SetActive(false);
+
 
                 _correspondingObject.transform.position = new Vector3(transform.position.x, transform.position.y - 0.1216f,
                     transform.position.z);

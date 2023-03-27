@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        anim = gameObject.GetComponentInChildren<Animator>();
+      
     }
 
     void Update()
@@ -35,12 +37,12 @@ public class PlayerMovement : MonoBehaviour
         if (move != Vector3.zero)
         {
             gameObject.transform.forward = move;
-            anim.SetInteger("AnimationPar", 1);
 
         } else
         {
             anim.SetInteger("AnimationPar", 0);
         }
+        
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
@@ -50,7 +52,8 @@ public class PlayerMovement : MonoBehaviour
     {
             Vector2 movement = context.ReadValue<Vector2>();
             move = new Vector3(movement.x, 0, movement.y);
-         
+            anim.SetInteger("AnimationPar", 1);
+
     }
 
     public void Jump(InputAction.CallbackContext context)

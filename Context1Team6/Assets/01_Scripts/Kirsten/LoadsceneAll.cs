@@ -10,16 +10,18 @@ public class LoadsceneAll : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("ik ga eruit");
     }
 
     public void LoadSceneButton()
     {
         SceneManager.LoadScene(sceneName);
+        Debug.Log("ik ga erheen");
     }
 
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("GOGOGOGO SCENE");
-        SceneManager.LoadScene("Levels 2");
+        SceneManager.LoadScene("Eind scene");
     }
 }
