@@ -3,31 +3,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem;
+using _01_Scripts.Nathan.prototype.Dev_skills;
 
 public class LoadDeveloperPuzzle : MonoBehaviour
 {
     [SerializeField] private Canvas _canvas;
+    private PlayerMovement devmovement;
+    private puzzel1Input puzzel1;
 
-    public PlayerInput playerInput;
+    public GameObject GamepadCursorDoor;
 
     private void Start()
     {
         _canvas.gameObject.SetActive(false);
-        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Developer>())
         {
+            Debug.Log(other);
+            devmovement = other.GetComponent<PlayerMovement>();
+            Debug.Log("ontrigger " + devmovement);
+            puzzel1 = _canvas.GetComponent<puzzel1Input>();
+            Debug.Log(puzzel1);
+
+            puzzel1.CanvasPlayermovement = devmovement;
+            Debug.Log("puzzel1 " + puzzel1.CanvasPlayermovement);
+            devmovement.enabled = false;
+
             _canvas.gameObject.SetActive(true);
-            playerInput = other.gameObject.GetComponentInChildren<PlayerInput>();
-            Debug.Log(playerInput);
+            GamepadCursorDoor.SetActive(true);
 
-            playerInput.SwitchCurrentActionMap("UI");
-
-            Debug.Log(playerInput.currentActionMap);
         }
     }
 
@@ -36,10 +43,6 @@ public class LoadDeveloperPuzzle : MonoBehaviour
         if (other.gameObject.GetComponent<Developer>())
         {
             _canvas.gameObject.SetActive(false);
-            playerInput.SwitchCurrentActionMap("Player");
-
-            Debug.Log(playerInput.currentActionMap);
-
         }
     }
 }

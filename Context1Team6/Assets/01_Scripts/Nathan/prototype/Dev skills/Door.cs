@@ -7,7 +7,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public GameObject DoorPrefab;
-    public puzzel1Input Puzzel1Input;
+    public TweedePuzzelInput tweedePuzzelInput;
 
 
     [SerializeField] private float _heightChangeForLerp;
@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Puzzel1Input.Passed == true && isOccupied == true)
+        if (tweedePuzzelInput.PassedTest == true && isOccupied == true)
         {
             MoveGameObject();
         }
