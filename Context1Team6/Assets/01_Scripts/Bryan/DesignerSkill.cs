@@ -12,7 +12,10 @@ namespace _01_Scripts.Bryan
         // Start is called before the first frame update
         void Start()
         {
-            _playerMovement = GetComponent<PlayerMovement>();
+
+            SetDesingerChildOn();
+
+             _playerMovement = GetComponent<PlayerMovement>();
             
             _input = new PlayerControls();
             _input.Designer.GravityCycle.performed += ctx => { CycleBetweenGravityValues(); };
@@ -24,6 +27,7 @@ namespace _01_Scripts.Bryan
         // Update is called once per frame
         void Update()
         {
+            Debug.Log(_playerMovement);
         }
 
         public void CycleBetweenMovementSpeedValues()
@@ -54,12 +58,24 @@ namespace _01_Scripts.Bryan
         {
             _playerMovement.jumpHeight = _playerMovement.jumpHeight * 2f;
 
-            if (_playerMovement.jumpHeight > 32f)
+            if (_playerMovement.jumpHeight > 16f)
             {
                 _playerMovement.jumpHeight = 8f;
             }
 
             Debug.Log(_playerMovement.jumpHeight);
+        }
+
+        private void SetDesingerChildOn()
+        {
+            //alle skills uitzetten
+            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(1).gameObject.SetActive(false);
+            transform.GetChild(2).gameObject.SetActive(false);
+            transform.GetChild(3).gameObject.SetActive(false);
+
+            //Designer aanzetten
+            transform.GetChild(2).gameObject.SetActive(true);
         }
     }
 }

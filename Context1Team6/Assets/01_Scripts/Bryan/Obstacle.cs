@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public Transform spawnPoint;
+    //public Transform spawnPoint;
 
-    void OnTriggerEnter(Collider other)
-    {
-        //transform.position = spawnPoint.transform.position;
-        transform.position = new Vector3(0, 6, 0);
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    //transform.position = spawnPoint.transform.position;
+    //    transform.position = new Vector3(0, 6, 0);
 
-    }
+    //}
 
 }

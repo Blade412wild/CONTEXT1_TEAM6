@@ -38,20 +38,27 @@ public class DesignerCube : MonoBehaviour
     {
         var Developer = player.GetComponent<Developer>();
         var Artist = player.GetComponent<Artist>();
-        var Designer = player.GetComponent <Designer>();
+        var Designer = player.GetComponent <DesignerSkill>();
 
         if (Developer == true || Artist == true || Designer == true)
         {
             Destroy(Developer);
             Destroy(Artist);
             Destroy(Designer);
-            player.AddComponent<Designer>();
+            player.AddComponent<DesignerSkill>();
+            Debug.Log("removed everything"); 
+            
+            
         }
         else
         {
-            player.AddComponent<Designer>();
+            player.AddComponent<DesignerSkill>();
+            Debug.Log("only edited skill");
+
+           
         }
 
+       
         IsOcuppied = false;
 
 

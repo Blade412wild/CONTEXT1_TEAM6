@@ -15,9 +15,9 @@ public class ChooseCharacterController : MonoBehaviour
         artistCube = this.gameObject.GetComponentInChildren<ArtistCube>();
         developerCube = this.gameObject.GetComponentInChildren<DeveloperCube>();
 
-        developerCube.Change = false;
-        desingerCube.Change = false;
-        artistCube.Change = false;
+        //developerCube.Change = false;
+        //desingerCube.Change = false;
+        //artistCube.Change = false;
     }
 
     void Update()
